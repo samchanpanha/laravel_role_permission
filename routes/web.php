@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\UserContoller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -44,6 +46,12 @@ Route::group(['middleware' => ['auth']], function () {
 
     //permission
     Route::resource('permissions', 'PermissionController');
+
+    // customer
+    Route::resource('customers', 'CustomerController');
+
+    //payment
+    Route::resource('payments', 'PaymentController');
 });
 
 //////////////////////////////// axios request

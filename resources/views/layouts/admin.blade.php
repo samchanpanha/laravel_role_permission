@@ -123,8 +123,26 @@
                                     </a>
                                 </li>
                             </ul>
-
                         </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('customers.index') }}" class="nav-link">
+                                <i class="nav-icon fas fa-cubes"></i>
+                                <p>
+                                    Customer
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{{ route('payments.index') }}" class="nav-link">
+                                <i class="nav-icon fas fa-money-bill"></i>
+                                <p>
+                                    Payments
+                                </p>
+                            </a>
+                        </li>
+
                         <li class="nav-item">
                             <a href="{{ route('users.profile') }}" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
